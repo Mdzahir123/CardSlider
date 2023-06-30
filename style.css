@@ -14,19 +14,17 @@ body {
   background: #f2f2f2;
 }
 
-section {
+.swiperContainer {
   position: relative;
   height: 450px;
-  /* width: 1075px; */
+  width: 1090px;
   display: flex;
   align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
-.swiper {
-  width: 950px;
-}
-
-.card {
+.cSlider {
   position: relative;
   background: #FFE1E6;
   /* border-radius: 20px; */
@@ -36,7 +34,7 @@ section {
   width: 342px;
 }
 
-.card::before {
+.cSlider::before {
   content: "";
   position: absolute;
   height: 40%;
@@ -45,7 +43,7 @@ section {
   /* border-radius: 20px 20px 0 0; */
 }
 
-.card .card-content {
+.cSlider .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,20 +52,20 @@ section {
   z-index: 100;
 }
 
-section .card .image {
+.swiperContainer .cSlider .image {
   height: 160px;
   width: 160px;
   padding: 3px;
 
 }
 
-section .card .image img {
+.swiperContainer .cSlider .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.card .name-profession {
+.cSlider .name-profession {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,15 +89,4 @@ section .card .image img {
   opacity: 0.7;
   color: grey;
   transition: all 0.3s ease;
-}
-
-/* .swiper-button-next:hover,
-.swiper-button-prev:hover {
-  opacity: 1;
-  color: #FF676D;
-} */
-
-
-@media only screen and (min-width: 768px) {
- 
 }
